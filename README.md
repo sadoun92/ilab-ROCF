@@ -1,3 +1,3 @@
 # ilab-ROCF
 
-ilab research capability framework-ROCF
+ilab Research Capability Framework-ROCF
