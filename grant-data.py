@@ -18,7 +18,6 @@ if not 'google.colab' in sys.modules:
 
 
 print("==\nLogging in..")
-# https://github.com/digital-science/dimcli#authentication
 ENDPOINT = "https://app.dimensions.ai"
 if 'google.colab' in sys.modules:
   import getpass
@@ -79,8 +78,7 @@ pubs = pd.DataFrame().from_dict(results)
 print("Publications found: ", len(pubs))
 pubs.drop_duplicates(subset='doi', inplace=True)
 print("Unique publications found: ", len(pubs))
-# turning lists into strings to ensure compatibility with CSV loaded data
-# see also: https://stackoverflow.com/questions/23111990/pandas-dataframe-stored-list-as-string-how-to-convert-back-to-list
+
 pubs['supporting_grant_ids'] = pubs['supporting_grant_ids'].apply(lambda x: ','.join(map(str, x)))
 
 pubs.head(5)
