@@ -21,10 +21,10 @@ if not 'google.colab' in sys.modules:
 
   import getpass
   USERNAME = getpass.getpass(prompt='mohammadkhalil.m.saadoonAPI@student.uts.edu.au' )
-  PASSWORD = getpass.getpass(prompt='qpzR38TV')
-  dimcli.login(username ="mohammadkhalil.m.saadoonAPI@student.uts.edu.au" , password = "qpzR38TV" )
+  PASSWORD = getpass.getpass(prompt='')
+  dimcli.login(username ="mohammadkhalil.m.saadoonAPI@student.uts.edu.au" , password = "" )
 else:
-  dimcli.login(username ="mohammadkhalil.m.saadoonAPI@student.uts.edu.au" , password = "qpzR38TV" )
+  dimcli.login(username ="mohammadkhalil.m.saadoonAPI@student.uts.edu.au" , password = "" )
 dsl = dimcli.Dsl()
 
 
